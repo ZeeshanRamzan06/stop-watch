@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(194, 194, 214);
+    }
+    .container{
+    
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgb(66, 87, 133);
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .main-h{
+        margin-top: 10px;
+    }
+    .headings h1{
+        display: inline-block;
+        background-color: white;
+        width: 100px;
+        text-align: center;
+        background-color: rgb(226, 217, 217);
+        /* border-radius: 20px; */
+        
+    }
+    .btn{
+        margin: 50px;
+    }
+    button{
+        border: none;
+        outline: none;
+        width: 80px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+
+</style>
+<body>
+ <div class="container">
+    <h1 class="main-h">Stop Watch</h1>
+    <div class="headings">
+        <h1 id="hour">0</h1>
+        <h1 id="min">0</h1>
+        <h1 id = "sec">0</h1>
+        <h1 id ="msec">0</h1>
+
+    </div>
+    <div class="btn">
+        <button onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
